@@ -1,2 +1,2 @@
 # cpp
-Beecrowd - 1 INICIANTE - Python
+Beecrowd - 1 INICIANTE - C++
