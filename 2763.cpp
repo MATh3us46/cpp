@@ -7,12 +7,12 @@ int main(){
 
     cin >> cpf;
 
-    for(int i=0; i<cpf.size(); i++){
-        if(cpf[i] == '.' || cpf[i] == '-'){
+    for(auto c : cpf){
+        if(c == '.' || c == '-'){
             cout << '\n';
             continue;
         }
-        cout << cpf[i];
+        cout << c;
     }
     cout << "\n";
     
