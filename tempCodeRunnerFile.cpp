@@ -1,26 +1,17 @@
 #include <iostream>
-#include <vector>
+#include <iomanip>
 
 using namespace std;
 
 int main(){
-    int n, t, menor, m=0;
-    vector<int> vet;
+    double x;
 
-    cin >> n;
-    for(int i=0; i<n; i++){
-        cin >> t;
-        vet.push_back(t);
+    cin >> x;
+
+    if(x >= 0){
+        cout << "+" << uppercase << scientific << setprecision(4) << x << "\n";
     }
-
-    menor = vet[0];
-
-    for(int i=0; i<vet.size(); i++){
-        if(menor > vet[i]){
-            menor = vet[i];
-            m = i;
-        }
+    else{
+        cout << "-" << uppercase << scientific << setprecision(4) << x << "\n";
     }
-
-    cout << m+1 << "\n";
 }
